@@ -116,6 +116,7 @@ class ModelWorker:
         # TODO: Establish a standard that can be uniformly written in the config.
         if is_longchat:
             self.context_len = 16384
+        self.context_len = 16384
 
         if is_chatglm:
             self.generate_stream_func = generate_stream_chatglm
